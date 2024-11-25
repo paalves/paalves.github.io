@@ -3,31 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paul-Adrien Alves - Portfolio</title>
+    <title>Portfolio</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 </head>
-<body class="bg-gray-100 font-sans leading-normal tracking-normal">
-    <header class="bg-white shadow-md">
+<body>
+    <header class="shadow-md">
         <nav class="container mx-auto px-4 py-5 flex justify-between items-center">
-            <div class="text-2xl font-bold text-gray-800">Page personnelle</div>
+            <div class="text-2xl font-bold">Page personnelle</div>
             <ul class="flex space-x-4">
-                <li><a href="#" class="text-gray-600 hover:text-blue-500">Accueil</a></li>
-                <li><a href="#" class="text-gray-600 hover:text-blue-500">CV</a></li>
-                <li><a href="#" class="text-gray-600 hover:text-blue-500">Contact</a></li>
+                <li><a href="#" class="hover:text-white">Accueil</a></li>
+                <li><a href="#" class="hover:text-white">CV</a></li>
+                <li><a href="#" class="hover:text-white">Contact</a></li>
             </ul>
         </nav>
     </header>
     
     <main class="container mx-auto px-4 py-8">
-        <section class="bg-white shadow-lg rounded-lg p-8 mb-8">
-            <h1 class="text-3xl font-bold text-gray-800">Paul-Adrien Alves</h1>
-            <p class="text-gray-600">Doctorant en statistique des extrêmes - Ifremer</p>
+        <section class="rounded-lg p-8 mb-8">
+            <h1 class="text-3xl font-bold" style="color: var(--deep-blue);">Paul-Adrien Alves</h1>
+            <p class="text-gray-700">Doctorant en statistique des extrêmes - Ifremer</p>
         </section>
         
         <section class="grid md:grid-cols-2 gap-6">
-            <div class="bg-white shadow-md rounded-lg p-6">
-                <h2 class="text-2xl font-semibold mb-4">Projet</h2>
+            <div class="rounded-lg p-6">
+                <h2 class="text-2xl font-semibold mb-4" style="color: var(--deep-blue);">Projet</h2>
                 <ul>
                     <li class="mb-3 pb-3 border-b">
                         <h3 class="font-bold">Conditions environnementales extrêmes en mer</h3>
@@ -35,39 +36,38 @@
                     </li>
                 </ul>
             </div>
-            <div class="bg-white shadow-md rounded-lg p-6">
-                <h2 class="text-2xl font-semibold mb-4">Outils</h2>
+            <div class="rounded-lg p-6">
+                <h2 class="text-2xl font-semibold mb-4" style="color: var(--deep-blue);">Outils</h2>
                 <div class="flex flex-wrap gap-2">
-                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">R</span>
-                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Statistique</span>
-                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Théorie des valeurs extrêmes</span>
-                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Océanographie</span>
+                    <span class="tool-badge px-3 py-1 rounded-full text-sm">R</span>
+                    <span class="tool-badge px-3 py-1 rounded-full text-sm">Statistique</span>
+                    <span class="tool-badge px-3 py-1 rounded-full text-sm">Théorie des valeurs extrêmes</span>
+                    <span class="tool-badge px-3 py-1 rounded-full text-sm">Océanographie</span>
                 </div>
             </div>
         </section>
         
-        <section class="mt-8 bg-white shadow-md rounded-lg p-6">
-            <h2 class="text-2xl font-semibold mb-4">Contact</h2>
-            <div class="flex space-x-4">
-                <a href="https://github.com/paalves" target="_blank" class="text-gray-600 hover:text-blue-500">
+        <section class="mt-8 rounded-lg p-6">
+            <h2 class="text-2xl font-semibold mb-4" style="color: var(--deep-blue);">Contact</h2>
+            <div class="flex space-x-4 contact-icons">
+                <a href="https://github.com/paalves" target="_blank">
                     <i data-feather="github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/paul-adrien-alves-020b14235" target="_blank" class="text-gray-600 hover:text-blue-500">
+                <a href="https://www.linkedin.com/in/paul-adrien-alves-020b14235" target="_blank">
                     <i data-feather="linkedin"></i>
                 </a>
-                <a href="pauladri.alves@gmail.com" class="text-gray-600 hover:text-blue-500">
+                <a href="pauladri.alves@gmail.com">
                     <i data-feather="mail"></i>
                 </a>
             </div>
         </section>
     </main>
     
-    <footer class="bg-gray-800 text-white text-center py-4 mt-8">
+    <footer class="text-white text-center py-4 mt-8">
         <p>&copy; 2024</p>
     </footer>
     
     <script>
-        // Initialize Feather Icons
         feather.replace();
     </script>
 </body>
